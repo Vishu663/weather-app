@@ -2,3 +2,13 @@
   max-width: 1080px;
   margin: 20px auto;
 }
+
+.home-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-title h1 {
+  color: rgb(166, 162, 162);
+}

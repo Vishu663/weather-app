@@ -3,7 +3,7 @@ import "./current-weather.css";
 
 function CurrentWeather({ data, forecast }) {
     // Function to convert Fahrenheit to Celsius
-    const convertToFahrenheit = (temp) => {
+    const convertToCelsius = (temp) => {
         return Math.round((temp - 32) / 1.8000);
     };
 
@@ -15,7 +15,7 @@ function CurrentWeather({ data, forecast }) {
                         <span className="city">{data.city}</span>
                     </div>
                     <div className="weather-details">
-                        <span className="temperature">{convertToFahrenheit(data.main?.temp)}°C</span>
+                        <span className="temperature">{convertToCelsius(data.main?.temp)}°C</span>
                         <span className="weather-description">{data.weather[0]?.description}</span>
                     </div>
                 </div>
