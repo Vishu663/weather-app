@@ -36,6 +36,12 @@ function App() {
   return (
     <div className="container">
       <div className="home-title">
+        <img
+          src="weatherupp-logo.svg"
+          alt="logo"
+          height={"10%"}
+          width={"10%"}
+        />
         <h1>WeatherrUp</h1>
       </div>
       <Search onSearchChange={handleOnSearchChange} />
